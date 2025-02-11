@@ -16,9 +16,10 @@ Steps for adding a new config profile:
 - [ ] Add your custom profile to the `nfcore_custom.config` file in the top-level directory
 - [ ] Add your custom profile to the `README.md` file in the top-level directory
 - [ ] Add your profile name to the `profile:` scope in `.github/workflows/main.yml`
+- [ ] OPTIONAL: Add your custom profile path and GitHub user name to `.github/CODEOWNERS` (`**/<custom-profile>** @<github-username>`)
 
 <!--
-If you require/still waiting for a review, please feel free to request from @nf-core/configs-team
+If you require/still waiting for a review, please feel free to request a review from @nf-core/maintainers
 
 Please see uploading to`nf-core/configs` for more details:
 https://github.com/nf-core/configs#uploading-to-nf-coreconfigs
