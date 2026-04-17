@@ -6,22 +6,33 @@ The [High Performance Computing in Biology group (HPCBio)](https://hpcbio.illino
 
 This is a collection of profiles for HPC resources that HPCBio commonly used. These include:
 
-* `hpcbio_normal` - 
-* `hpcbio_himem` - 
-* `biocluster_normal` - 
-* `biocluster_himem` - 
+* `hpcbio` - HPCBio-specific queue on the IGB Biocluster
+* `biocluster` - Open queue on the IGB Biocluster
+<!-- 
+* `campus_cluster` - Open queue on the UIUC Campus Cluster
+* `biotech` - Internal cluster for the Carver Biotechnology Center
+ -->
 
 ## Running Nextflow
 
-Please consider making use of [screen or tmux](https://arccwiki.atlassian.net/wiki/spaces/DOCUMENTAT/pages/1617494076/Screen+and+Tmux+Commands)
-before launching your Interactive Job. This will allow you to resume it later.
+There are several computing resources available at the University of Illinois, with each having specific requirements for deploying Nextflow workflows. HPCBio has access to most of these and makes general configurations available for UIUC researchers to deploy workflows on these systems, though in some of these cases researchers may want to modify the default settings if they don't quite match the resources available in their own queues.
 
-When using Nextflow on ARCC it is recommended you launch Nextflow as an Interactive Jobs on one of the
-compute nodes, instead of the login nodes. To do this you will use the `salloc` command to launch an
-[Interactive Job](https://arccwiki.atlassian.net/wiki/spaces/DOCUMENTAT/pages/1599078403/Start+Processing#Interactive-Jobs).
+### IGB Biocluster
+
+In any of the below cases, consider making use of screen or tmux on the system. 
+
+### UIUC Campus Cluster
+
+When using Nextflow on the UIUC Campus Cluster, you will need to launch Nextflow as an interactive jobs on one of the compute nodes instead of the login nodes. Because this may take time, consider making use of screen or tmux on the system to allow time to start the interactive job and to 
+
+
 
 Once you are on a compute node, you can then use the `module` command to load Conda and/or
 Singularity.
+
+### CBC Biotech 
+
+
 
 ### Creating a Nextflow environment
 
